@@ -7,6 +7,8 @@ import { Toaster } from "@/components/ui/toaster";
 
 import { getCurrentUser } from "@/lib/actions/user.actions";
 
+export const dynamic = "force-dynamic";
+
 const RootLayout = async ({ children }: { children: React.ReactNode }) => {
   const currentUser = await getCurrentUser();
 
